@@ -1,0 +1,147 @@
+{
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+
+
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#00aaff",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			
+			{
+				"pagePath": "pages/TabBar/Home/Home",
+				"iconPath": "/static/icons/home.png",
+				"selectedIconPath": "/static/icons/home (1).png",
+				"text": "home页面"
+			}, 
+			
+			{
+				"pagePath": "pages/TabBar/ChatLine/ChatLine",
+				"iconPath": "/static/icons/chat.png",
+				"selectedIconPath": "/static/icons/chat (1).png",
+				"text": "聊天"
+			},
+			
+			{
+				"pagePath": "pages/TabBar/PositionManage/PositionManage",
+				"iconPath": "/static/icons/ai (1).png",
+				"selectedIconPath": "/static/icons/ai.png",
+				"text": "职位管理"
+			},
+			
+			{
+				"pagePath": "pages/TabBar/Mine/Mine",
+				"iconPath": "/static/icons/mine(1).png",
+				"selectedIconPath": "/static/icons/mine.png",
+				"text": "我的"
+			}
+		]
+	},
+
+
+
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//用户的tabbar页面
+
+		{
+			"path": "pages/LoginAndRegister/LoginAndRegister",
+			"style": {
+				"navigationBarTitleText": "登录注册页面"
+			}
+		},
+		{
+			"path": "pages/TabBar/ChatLine/ChatLine",
+			"style": {
+				"navigationBarTitleText": "聊天页面"
+			}
+		},
+		{
+			"path": "pages/Test/Test",
+			"style": {
+				"navigationBarTitleText": "测试页面"
+			}
+		},
+
+		{
+
+			"path": "pages/TabBar/Mine/Mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+
+			"path": "pages/TabBar/PositionManage/PositionManage",
+			"style": {
+				"navigationBarTitleText": "职位管理"
+			}
+		},
+		{
+
+			"path": "pages/TabBar/PositionManage/PublishPosition/PublishPosition",
+			"style": {
+				"navigationBarTitleText": "发布职位"
+			}
+		},
+		{
+			"path": "pages/TabBar/Home/Home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/EditCompanyInfo/EditCompanyInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "信息更新"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/PasswordUpdate/PasswordUpdate",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/TabBar/ChatLine/ChatWindow/ChatWindow",
+			"style" : 
+			{
+				 "navigationStyle": "custom", // 隐藏默认顶部导航
+				"navigationBarTitleText" : "聊天页面"
+			}
+		},
+		{
+			"path" : "pages/TabBar/PositionManage/InterViewManage/InterViewManage",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+
+
+
+
+	],
+
+
+
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

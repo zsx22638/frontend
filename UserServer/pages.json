@@ -1,0 +1,220 @@
+{
+	"easycom": {
+			"autoscan": true,
+			// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+			"custom": {
+				"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+				"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+		        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+			}
+		},
+		
+		
+		"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#00aaff",
+			"borderStyle": "white",
+			"backgroundColor": "#ffffff",
+			"list": [{
+				"pagePath": "pages/TabBar/Home/Home",
+				"iconPath": "/static/icons/home.png",
+				"selectedIconPath": "/static/icons/home (1).png",
+				"text": "首页"
+			}, 
+			{
+				"pagePath": "pages/TabBar/InterView/InterView",
+				"iconPath": "/static/icons/chat.png",
+				"selectedIconPath": "/static/icons/chat (1).png",
+				"text": "面试"
+			},
+			{
+				"pagePath": "pages/TabBar/Chat/Chat",
+				"iconPath": "static/icons/chat.png",
+				"selectedIconPath": "static/icons/chat (1).png",
+				"text": "消息"
+			},
+			
+			{
+				"pagePath": "pages/TabBar/MyResume/MyResume",
+				"iconPath": "/static/icons/ai (1).png",
+				"selectedIconPath": "/static/icons/ai.png",
+				"text": "简历"
+			},
+			{
+				"pagePath": "pages/TabBar/Mine/Mine",
+				"iconPath": "/static/icons/mine(1).png",
+				"selectedIconPath": "/static/icons/mine.png",
+				"text": "我的"
+			}
+			
+			]
+		},
+		
+		
+		
+		
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+	{
+		"path" : "pages/LoginAndRegister/LoginAndRegister",
+		"style" : 
+		{
+			"navigationBarTitleText" : "东葵招聘网",
+			"navigationStyle": "custom"
+		}
+	},
+        //用户的tabbar页面
+		{
+			"path" : "pages/TabBar/Home/Home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "东葵招聘",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path" : "pages/TabBar/MyResume/MyResume",
+			"style" : 
+			{
+				"navigationBarTitleText" : "简历管理"
+			}
+		},
+		{
+			"path" : "pages/TabBar/InterView/InterView",
+			"style" : 
+			{
+				"navigationBarTitleText" : "面试投递"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Chat/Chat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "聊天"
+			}
+		},
+
+		{
+			"path" : "pages/TabBar/Mine/Mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"navigationBarBackgroundColor":"#B2D7FF",
+				"backgroundColor": "#B2D7FF"
+				
+			}
+		},
+		
+
+		
+		
+
+		
+		
+		
+		
+		{
+			"path" : "pages/Test/Test",
+			"style" : 
+			{
+				"navigationBarTitleText" : "测试页面"  
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/EditUserInfo/EditUserInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "资料修改"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/PasswordUpdate/PasswordUpdate",
+			"style" : 
+			{
+				"navigationBarTitleText" : "密码修改"
+			}
+		},
+		{
+			"path" : "pages/TabBar/InterView/InterViewDetail/InterViewDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "面试详情"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Home/SearchPosition/SearchPosition",
+			"style" : 
+			{
+				"navigationBarTitleText" : "职位搜索",
+				"onReachBottomDistance":126 //距离底部多远时触发 单位px
+			}
+		},
+		{
+			"path" : "pages/TabBar/Home/PositionDetail/PositionDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "职位详情"
+			}
+		},
+		{
+			"path" : "pages/TabBar/MyResume/PublishResume/PublishResume",
+			"style" : 
+			{
+				"navigationBarTitleText" : "简历发布页面"
+			}
+		},
+		{
+			"path" : "pages/TabBar/MyResume/PreviewResume/PreviewResume",
+			"style" : 
+			{
+				"navigationBarTitleText" : "预览简历"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/contactOur/contactOur",
+			"style" : 
+			{
+				"navigationBarTitleText" : "联系我们"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/EmailFeedback/EmailFeedback",
+			"style" : 
+			{
+				"navigationBarTitleText" : "信箱回馈"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/Privacy/Privacy",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐私政策"
+			}
+		},
+		{
+			"path" : "pages/TabBar/Mine/QualificationShow/QualificationShow",
+			"style" : 
+			{
+				"navigationBarTitleText" : "资质公示"
+			}
+		}
+	
+	
+		
+		
+		
+	
+		
+		
+	],
+	
+	
+	
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8"
+		
+	},
+	"uniIdRouter": {}
+}
